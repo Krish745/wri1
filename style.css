@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Nanum+Gothic&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* background-color: #000000; */
+    font-family: "Roboto Condensed", Sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #be9c79;
+    --secondaryColor: #660600;
+    --darkColor: #330300;
+    --lightColor: #ff0f00;
+    --regularFont: 1.6rem;
+    --headingFont: 54px;
+    --ffPrimary: "Raleway", sans-serif;
+}
+
+/* Default code Ends here */
+
+/* project standard classes Starts */
+
+.align {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 3rem;
+}
+
+.componentSpacing {
+    padding: 1rem 0;
+}
+
+/* project standard classes Ends */
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dflex-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dflex-col-start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.dflex-col-just-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.dflex-start {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    flex-direction: column;
+}
+
+.dflexaround {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+
+
+
+/*::: HEADER CODE STARTS HERE::: */
+.navContainer {
+    background-color: #41535d;
+    padding: 2rem;
+}
+.navBar {
+    background-color: #41535d;
+}
+.navBody {
+    background-color: #41535d;
+}
+.navImage {
+    background-color: #41535d;
+}
+.navImage img {
+    height: 5vh;
+    margin-left: 4rem;
+    background-color: #41535d;
+}
+.topic {
+    gap: 6rem;
+    margin: 0px 3opx 0px 0px;
+    margin-top: 1rem;
+    margin-right: 6rem;
+}
+.topic li {
+    list-style-type: none;
+    
+}
+.topic a {
+    text-decoration: none;
+    font-size: 17.5px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    
+}
+.topic i {
+    font-size: 2.4rem;
+    color: #ffffff;
+}
+/* .heroContainer {
+    /* background-color: #be9c79; */
+ 
+.heroSection {
+    /* background-color: #ff0f00; */
+    background-image: url(./assets/images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 21rem;
+}
+
+/* .heroBody {
+    /* background-color: aqua; */
+
+.herojumbotron {
+    /* background-color: aqua; */
+    padding: 28rem 6rem 0rem;
+}
+.herojumbotron h1 {
+    /* background-color: blue; */
+    font-size: 42px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    color: #ffffff;
+
+}
+.herojumbotron button {
+    background-color: #ffffff;
+    margin-top: 2rem;
+    padding: 1rem 3rem 1rem 3.3rem;
+    border-radius: 2rem;
+}
+.herojumbotron button a {
+    background-color:#ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    color: #41535d;
+    font-weight: 600;
+}
+.wirtgenContainer {
+    background-color: #ffffff;
+}
+.wirtgen {
+    background-color: #ffffff;
+}
+.wirtgenTopic {
+    background-color: #ffffff;
+}
+.wirtgenTopic h2 {
+    margin-top: 12rem;
+    font-size: 42px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    text-align-last: center ;
+    text-align: justify;
+    color: #41535d;
+    font-weight: 700;
+}
+.wirtgenTopic p {
+    margin-top: 2rem;
+    font-size: 18.5px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    text-align-last: center;
+    text-align: justify;
+    font-weight: 300;
+}
+.pictureBody {
+    padding: 15rem 3rem 5rem 5rem;
+    gap: 4rem;
+}
+.tre img {
+    height: 8vh;
+}
+.tre h3 {
+    font-size: 15px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+
+}
+.three img {
+    height: 8vh;
+}
+.three h3 {
+    font-size: 15px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+
+}
+.four img {
+    height: 8vh;
+}
+.four h3 {
+    font-size: 15px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+
+}
+.two  img {
+    height: 8vh;
+}
+.two h3 {
+    font-size: 15px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+
+}
+.five img {
+    height: 8vh;
+}
+.five h3 {
+    font-size: 15px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+}
+.servicesContainer {
+    background-color: #ffffff;
+}
+.services {
+    background-color: #ffffff;
+
+}
+.servicesBody {
+    background-color: #ffffff;
+    margin-top: 20rem;
+}
+.servicesHeading {
+    background-color: #ffffff;
+}
+.servicesHeading h2 {
+    background-color: #ffffff;
+    font-size: 34px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    color: #41535d;
+}
+.servicesCard img {
+    background-color: #ffffff;
+}
+.servicesCard h3 {
+    font-size: 18px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    margin-top: 1rem;
+    color: #41535d;
+    
+}
+.servicesCard p {
+    font-size: 16.2px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    margin-top: 2rem;
+}
+.supportCard h2 {
+    font-size: 18px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    margin-top: 1rem;
+    color: #41535d;
+}
+.supportCard p {
+    font-size: 16.2px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    margin-top: 2rem;
+}
+.KnowingBody {
+    margin-top: 5rem;
+}
+.knowingTitle h2 {
+    font-size: 34px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    color: #41535d;
+}
+.knowingCard h2 {
+    font-size: 18px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    margin-top: 1rem;
+    color: #41535d;
+}
+.knowingCard p {
+    font-size: 16.2px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    margin-top: 2rem;
+}
+.groupCard h2 {
+    font-size: 18px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    margin-top: 1rem;
+    color: #41535d;
+}
+.groupCard p {
+    font-size: 16.2px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    margin-top: 2rem;
+}
+.futureBody {
+    margin-top: 5rem;
+}
+.futureHeading p {
+    font-size: 34px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    color: #41535d;
+}
+.futureCard h2 {
+    font-size: 18px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    margin-top: 1rem;
+    color: #41535d;
+}
+.futureCard p {
+    font-size: 16.2px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    margin-top: 2rem;
+
+}
+.machineryCard h2 {
+    font-size: 18px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    margin-top: 1rem;
+    color: #41535d;
+}
+.machineryCard p {
+    font-size: 16.2px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    margin-top: 2rem;
+}
+.machineBody {
+    margin-top: 6rem;
+} 
+.machineCard h2 {
+    font-size: 34.6px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    color: #41535d;
+}
+.machinetext p {
+    font-size: 16.2px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    padding: 0rem 0rem 2rem 3rem;
+    
+}
+.machinetext {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* margin-right: 8.8rem; */
+}
+.machineCard {
+    display: flex;
+    justify-content: flex-start;
+}
+.newsContainer {
+    /* background-color: #be9c79; */
+
+}
+.news {
+    /* background-color: #ff0f00; */
+}
+.headingBody {
+    /* background-color: aqua; */
+}
+.newsTitle {
+    /* background-color: blue; */
+}
+.newsTitle h2 {
+    font-size: 42px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+}
+.newsBody {
+    /* background-color: aqua; */
+    margin-top: 10rem;
+    padding: 3rem 28rem 0rem 20rem;
+}
+.newsbodytextBody {
+    padding: 1rem 6rem 0rem 6rem;
+}
+.reduced img {
+    height: 25vh;
+    margin-left: 9rem;
+}
+.award img {
+    height: 25vh;
+    margin-left: 9rem;
+}
+.new img {
+    height: 25vh;
+    margin-left: 11rem;
+}
+
+.reducedCard {
+    padding: 0rem 15rem;
+    position: relative;
+    bottom: 5rem;
+    
+
+    
+}
+.reducedCard p {
+    font-size: 15px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    margin-bottom: 3rem;
+    
+}
+.reducedCard a {
+    font-size: 15px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    text-decoration: none;
+}
+
+.borderBox{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    background-color: #ffffff;
+    padding: 2rem 2rem 8rem 2rem;
+    
+}
+.borderBox1 {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    background-color: #ffffff;
+    padding: 4rem 2rem 12rem 5rem;
+}
+.borderBox2 {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    background-color: #ffffff;
+    padding: 4rem 3rem 10rem 5rem;
+}
+.newsBottomBody {
+    margin-top: 7rem;
+}
+.battom button {
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 3rem;
+    
+}
+.battom a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #41535d;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+}
+.careerContainer {
+    background-color: #be9c79;
+}
+.career {
+    background-color: #ff0f00;
+}
+.careerBody {
+    background-color: aqua;
+}
+.careerTitle {
+    background-color: blue;
+}
+.careerTitle h2 {
+    font-size: 34px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    color: #41535d;
+}
+.currentCard h2 {
+    font-size: 18px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif; 
+    margin-top: 1rem;
+}
+.currentCard p {
+    font-size: 15px;
+    font-family: "AvenirNext", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    margin-top: 2rem;
+    color: #41535d;
+}
+.productsCard {
+
+}
+/*::: HEADER CODE ENDS HERE::: */
